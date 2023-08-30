@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Code generator</title>
+    <meta name="author" content="PANKAJ SAHU">
+    <meta name="keywords" content="keywords, key board, key code,">
+    <meta name="description" content="This is a simple web application that allows users to create a key code by pressing button in keyboard.">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+
+        #divi1 {
+            padding: 5px 40px;
+            background-color: white;
+            box-shadow: 0px 0px 5px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        #sp {
+            font-size: 4.5rem;
+            color: rgb(6, 181, 6);
+            box-shadow: 0px 0px 5px black;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        span {
+            color: rgb(6, 181, 6);
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divi1">
+        <h1>Press any Keyboard key</h1> <br>
+    </div>
+    <div id="divi2"></div>
+
+    <script>
+        const divi1 = document.getElementById("divi1");
+        const divi2 = document.getElementById("divi2");
+
+        document.addEventListener("keyup", function (e) {
+            divi1.innerHTML = "";
+            divi2.innerHTML = "";
+
+            const keyValue = e.key;
+            const keyCode = e.keyCode;
+
+            const spn = document.createElement("span");
+            spn.innerText = keyValue;
+
+            const l1 = document.createElement("h1");
+            l1.innerText = "You Pressed ";
+            l1.append(spn);
+
+            const l2 = document.createElement("h1");
+            l2.innerText = keyCode;
+            l2.id = "sp";
+
+            divi1.appendChild(l1);
+            divi2.appendChild(l2);
+        })
+    </script>
+
+</body>
+
+</html>
