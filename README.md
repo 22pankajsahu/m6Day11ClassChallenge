@@ -8,6 +8,7 @@ This is a simple web application that allows users to generate key codes by pres
 
 - [Demo](#demo)
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [How it Works](#how-it-works)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,6 +19,14 @@ This is a simple web application that allows users to generate key codes by pres
 ## Demo
 
 Check out the live demo of the Key Code Generator application [here](https://22pankajsahu.github.io/m6Day11ClassChallenge/).
+
+## Screenshots
+
+Include relevant screenshots of the application here.
+
+![image](https://github.com/22pankajsahu/m6Day11ClassChallenge/assets/135128502/1e27b2c8-ae02-4132-87fe-447877899785)
+
+![image](https://github.com/22pankajsahu/m6Day11ClassChallenge/assets/135128502/550e469b-825e-4850-88a8-f5fa882c1df1)
 
 ## Features
 
